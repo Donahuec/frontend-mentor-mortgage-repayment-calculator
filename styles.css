@@ -54,6 +54,7 @@ body {
   color: var(--fontColorBody);
   font-optical-sizing: auto;
   letter-spacing: 0px;
+  background-color: var(--slate100);
 }
 
 .sr-only {
@@ -75,6 +76,8 @@ body {
 
 .display-text {
   font: var(--fontDisplay);
+  letter-spacing: var(--titleLetterSpacing);
+  color: var(--lime);
 }
 
 .title-text {
@@ -85,7 +88,6 @@ body {
   font: var(--fontBold);
 }
 
-.display-text,
 .title-text,
 .bold-text {
   color: var(--fontColorStrong);
@@ -100,7 +102,28 @@ body {
   font: var(--fontError);
 }
 
+.card {
+  border-radius: 24px;
+}
+
+.calculator {
+  background-color: var(--white);
+}
+
 .results {
   --fontColorBody: var(--slate300);
   --fontColorStrong: var(--white);
+  background-color: var(--slate900);
+
+  .body-text {
+    color: var(--fontColorBody);
+  }
+}
+
+.has-results {
+  display: none;
+}
+
+.mortgage-calculation {
+  background-color: hsl(0 0 0 / 0.25);
 }

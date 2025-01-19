@@ -16,47 +16,80 @@
   </head>
   <body>
     <main>
-      <h1 class="title-text">Mortgage Calculator</h1>
-      <div class="display-text">Display</div>
-      <div class="bold-text">Bold</div>
-      <div class="body-text">body</div>
-      <div class="error-text">error</div>
+      <div class="card">
+        <section class="calculator">
+          <div class="title-line">
+            <h1 class="title-text">Mortgage Calculator</h1>
+            <button class="clear">Clear All</button>
+          </div>
+          <form>
+            <div class="mortgage-amount">
+              <div class="input-container">
+                <label for="amount"> Mortgage Amount </label>
+                <input id="amount" />
+              </div>
+            </div>
+            <div class="mortgage-term">
+              <div class="input-container">
+                <label for="term"> Mortgage Term </label>
+                <input id="term" />
+              </div>
+              <div class="input-container">
+                <label for="interest"> Interest Rate </label>
+                <input id="interest" />
+              </div>
+            </div>
+            <div class="mortgage-type">
+              <fieldset class="radio-group">
+                <legend>Mortgage Type</legend>
+                <div class="radio-option">
+                  <label for="repayment">Repayment</label>
+                  <input type="radio" name="mortgage-type" id="repayment" />
+                </div>
+                <div class="radio-option">
+                  <label for="interest-only">Interest Only</label>
+                  <input type="radio" name="mortgage-type" id="interest-only" />
+                </div>
+              </fieldset>
+            </div>
+            <button class="submit">Calculate Repayments</button>
+          </form>
+        </section>
+        <section class="results">
+          <div class="no-results">
+            <h2 class="title-text">Results shown here</h2>
+            <img src="./assets/images/illustration-empty.svg" alt="" />
+            <p class="body-text">
+              Complete the form and click “calculate repayments” to see what
+              your monthly repayments would be.
+            </p>
+          </div>
+          <div class="has-results">
+            <h2 class="title-text">Your results</h2>
+            <p class="body-text">
+              Your results are shown below based on the information you
+              provided. To adjust the results, edit the form and click
+              “calculate repayments” again.
+            </p>
+            <div class="mortgage-calculation">
+              <div class="monthly">
+                <h3 class="body-text">Your monthly repayments</h3>
+                <p class="display-text">10000</p>
+              </div>
+              <div class="term">
+                <h3 class="body-text">Total you'll repay over the term</h3>
+                <p class="title-text">10000</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <pre style="display: none">
   
-  Clear All
+  
 
-  Mortgage Amount
-
-  Mortgage Term
-
-  Interest Rate
-
-  Mortgage Type
-  Repayment
-  Interest Only
-
-  Calculate Repayments
-
-  <!-- Empty results start -->
-
-  Results shown here
-
-  Complete the form and click “calculate repayments” to see what 
-  your monthly repayments would be.
-
-  <!-- Empty results end -->
-
-  <!-- Completed results start -->
-
-  Your results
-
-  Your results are shown below based on the information you provided. 
-  To adjust the results, edit the form and click “calculate repayments” again.
-
-  Your monthly repayments
-
-  Total you'll repay over the term
+  
 
   <!-- Completed results end -->
   </pre>
