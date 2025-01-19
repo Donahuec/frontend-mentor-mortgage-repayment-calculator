@@ -1,0 +1,57 @@
+body {
+  font: var(--fontBody);
+  font-optical-sizing: auto;
+  letter-spacing: 0px;
+}
+
+.display-text {
+  font: var(--fontDisplay);
+  color: var(--lime);
+}
+
+.title-text {
+  font: var(--fontTitle);
+}
+
+.bold-text {
+  font: var(--fontBold);
+}
+
+.title-text,
+.bold-text {
+  color: var(--fontColorStrong);
+}
+
+.body-text {
+  font: var(--fontBody);
+}
+
+.error-text {
+  font: var(--fontError);
+}
+
+.calculator {
+  color: var(--fontColorBody);
+}
+
+input {
+  font: var(--fontBold);
+}
+
+.results {
+  --fontColorBody: var(--slate300);
+  --fontColorStrong: var(--white);
+  color: var(--slate300);
+
+  .body-text {
+    color: var(--fontColorBody);
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

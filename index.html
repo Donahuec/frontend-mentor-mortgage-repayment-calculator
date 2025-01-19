@@ -22,7 +22,7 @@
             <h1 class="title-text">Mortgage Calculator</h1>
             <button class="clear">Clear All</button>
           </div>
-          <form>
+          <form class="calculator-form">
             <div class="mortgage-amount">
               <div class="input-container">
                 <label for="amount"> Mortgage Amount </label>
@@ -42,31 +42,31 @@
             <div class="mortgage-type">
               <fieldset class="radio-group">
                 <legend>Mortgage Type</legend>
-                <div class="radio-option">
-                  <label for="repayment">Repayment</label>
+                <div class="radio-option bold-text">
                   <input type="radio" name="mortgage-type" id="repayment" />
+                  <label for="repayment">Repayment</label>
                 </div>
-                <div class="radio-option">
-                  <label for="interest-only">Interest Only</label>
+                <div class="radio-option bold-text">
                   <input type="radio" name="mortgage-type" id="interest-only" />
+                  <label for="interest-only">Interest Only</label>
                 </div>
               </fieldset>
             </div>
-            <button class="submit">Calculate Repayments</button>
           </form>
+          <button class="submit">Calculate Repayments</button>
         </section>
         <section class="results">
           <div class="no-results">
-            <h2 class="title-text">Results shown here</h2>
             <img src="./assets/images/illustration-empty.svg" alt="" />
-            <p class="body-text">
+            <h2 class="title-text">Results shown here</h2>
+            <p>
               Complete the form and click “calculate repayments” to see what
               your monthly repayments would be.
             </p>
           </div>
           <div class="has-results">
             <h2 class="title-text">Your results</h2>
-            <p class="body-text">
+            <p>
               Your results are shown below based on the information you
               provided. To adjust the results, edit the form and click
               “calculate repayments” again.
@@ -84,24 +84,16 @@
           </div>
         </section>
       </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/Donahuec"
+          >Caitlin Donahue</a
+        >.
+      </div>
     </main>
-    <pre style="display: none">
-  
-  
 
-  
-
-  <!-- Completed results end -->
-  </pre>
-
-    <footer class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by
-      <a href="https://www.frontendmentor.io/profile/Donahuec"
-        >Caitlin Donahue</a
-      >.
-    </footer>
     <script src="./index.js"></script>
   </body>
 </html>
